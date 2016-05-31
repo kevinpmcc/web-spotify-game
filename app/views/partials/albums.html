@@ -1,7 +1,6 @@
-<ion-content id="albums" ng-controller="AlbumController as controller">
+<div id="albums" ng-controller="AlbumController as controller">
 <div id="container">
   <h1><b>SPOTIFY GAME</b></h1>
-
   <section class="search center">
     <form ng-submit="controller.loadAlbums(searchterms)">
       <input type="text" ng-model="searchterms" id="album-search-box"
@@ -13,11 +12,11 @@
   <div class="list">
     <div id="{{ $index }}"ng-repeat="album in controller.albums" class="item item-thumbnail-left" ng-click="controller.loadSongToGuess(album)">
       <img src="{{ album.imgUrl }}">
-      <h2> {{ album.title }} </h2>
+      <!-- <h2> {{ album.title }} </h2> -->
 
     </div>
   </div>
   <div id="further explanation">
 
 </div>
-</ion-content>
+</div>

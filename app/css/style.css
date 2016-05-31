@@ -1,7 +1,16 @@
 /* Empty. Add your own CSS if you like */
+#container {
+  padding-top: 50px;
+  padding-right: 20%;
+  /*padding-bottom: 50px;*/
+  padding-left: 20%;
+  text-align: center;
+}
+
 h1 {
+  font-family:'Avenir Next', sans-serif;
   weight: heavy;
-  text: bold;
+  /*text: bold;*/
   font-size: 5.9vw;
 }
 
@@ -17,11 +26,8 @@ ion-content {
   text-align: center;
 }
 
-#container {
-  padding-top: 50px;
-  padding-right: 20%;
-  /*padding-bottom: 50px;*/
-  padding-left: 20%;
+.list-group-item {
+  padding-bottom: 10px;
 }
 .center {
   margin: auto;
@@ -39,7 +45,15 @@ input {
   text-align: center;
   border: 5px;
   width: 100%;
-  font-size: 10%;
+  font-size: 100%;
+}
+
+.button-play {
+  background-color: transparent;
+}
+img {
+  width: 50%;
+  height: auto;
 }
 body {
   background-color: #EFEDE1;
