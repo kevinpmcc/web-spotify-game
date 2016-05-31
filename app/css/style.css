@@ -1,0 +1,65 @@
+/* Empty. Add your own CSS if you like */
+h1 {
+  weight: heavy;
+  text: bold;
+  font-size: 5.9vw;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Avenir Next', sans-serif;
+
+}
+
+h2 {
+  font-size: 400%;
+}
+ion-content {
+  text-align: center;
+}
+
+#container {
+  padding-top: 50px;
+  padding-right: 20%;
+  /*padding-bottom: 50px;*/
+  padding-left: 20%;
+}
+.center {
+  margin: auto;
+}
+
+.item {
+
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+input {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  border: 5px;
+  width: 100%;
+  font-size: 10%;
+}
+body {
+  background-color: #EFEDE1;
+}
+input placeholder {
+   color: red;
+}
+.music-buttons {
+  padding-bottom: 20px;
+}
+.btn-search {
+  display: inline-block;
+  margin: 0.8em;
+  padding: 0.275em 0.775em;
+  border: 2px solid #191919;
+  color: #191919;
+  line-height: 1.5;
+  min-width: 5.575em;
+  background-color: transparent;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
