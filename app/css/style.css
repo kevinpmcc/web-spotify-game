@@ -10,7 +10,6 @@
 h1 {
   font-family:'Avenir Next', sans-serif;
   weight: heavy;
-  /*text: bold;*/
   font-size: 5.9vw;
 }
 
@@ -22,6 +21,7 @@ h1 h2 h3 h4 h5 h6 {
 h2 {
   font-size: 400%;
 }
+
 ion-content {
   text-align: center;
 }
@@ -39,6 +39,7 @@ ion-content {
   margin-bottom: 10px;
 
 }
+
 input {
   position: relative;
   margin: auto;
@@ -51,16 +52,17 @@ input {
 .button-play {
   background-color: transparent;
 }
+
 img {
   width: 50%;
   height: auto;
 }
+
 body {
   background-color: #EFEDE1;
 }
-input placeholder {
-   color: red;
-}
+
+
 .music-buttons {
   padding-bottom: 20px;
 }

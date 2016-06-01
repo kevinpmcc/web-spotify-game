@@ -29,10 +29,9 @@ angular.module('introGame.albumController',['ui.router', 'introGame.playLogServi
     };
 
     self._changeToSongState = function(){
-      $state.go('song', {})
-    }
+      $state.go('song', {});
+    };
 
-// spotify:album:
   self.albums = [
     {artist: "Weezer",
      title: "Weezer",
