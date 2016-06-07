@@ -50,8 +50,17 @@ input {
 }
 
 .button-play {
-  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
 }
+
+.glyphicon {
+  font-size: 300%;
+}
+
 
 img {
   width: 50%;
