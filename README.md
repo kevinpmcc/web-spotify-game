@@ -1,4 +1,4 @@
-# spotify-game  
+# Spotify Game  
 
 This is a web-based version of Name That Tune. Spotify Game is its working title.  
 
