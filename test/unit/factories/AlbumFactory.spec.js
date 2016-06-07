@@ -8,7 +8,7 @@ describe('AlbumFactory', function() {
   }));
 
   it('creates albums', function() {
-    expect(albumObj.name).toEqual('Covered Up With Flowers');
+    expect(albumObj.title).toEqual('Covered Up With Flowers');
     expect(albumObj.imgUrl).toEqual('https://i.scdn.co/image/93319d6c39d51bf015927c2c684a1615ff5a51f2');
     expect(albumObj.albumID).toEqual('3Dd64usOdiAsvK3Ub0baX0');
         });

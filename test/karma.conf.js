@@ -16,10 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'app/bower_components/angular/angular.js',
+      'app/lib/angular-audio/app/angular.audio.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
+      'app/lib/angular-ui-router/release/angular-ui-router.js',
+      'app/js/app.js',
       'app/js/**/*.js',
-      'test/unit/**/*.js',
-      'app/index.html'
+                  'test/unit/**/*.js',
+                                 'app/index.html'
 
                                  ],
 
@@ -66,11 +69,11 @@ module.exports = function(config) {
       // Continuous Integration mode
       // if true, Karma captures browsers, runs the tests and exits
       singleRun: false,
-      
+
       plugins : [
-        'karma-chrome-launcher',
-        'karma-jasmine'
-        ],
+      'karma-chrome-launcher',
+      'karma-jasmine'
+      ],
       // Concurrency level
       // how many browser should be started simultaneous
       concurrency: Infinity
