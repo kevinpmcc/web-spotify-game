@@ -32,7 +32,7 @@ describe("Current Angular UI router state", function () {
 
   it('transitions from album to song by clicking on an album', function(){
     element(by.id('0')).click();
-    expect(element(by.id('play-button-1')).getText()).toContain("1s");
+    expect(element(by.id('play-button-1')).getText()).toContain("1 second");
   });
 
   it("plays a song when an album is selected and the 'play' button is clicked", function(){
