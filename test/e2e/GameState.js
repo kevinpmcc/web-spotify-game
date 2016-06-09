@@ -11,6 +11,11 @@ describe("Current Angular UI router state", function () {
     mock.teardown();
   });
 
+  it("has a button which lets you start the game", function(){
+    var button = element(by.id('start-button'));
+    expect(button.isPresent()).toBeTruthy();
+  });
+
   it("returns the current state", function (){
     var currentStateName = browser.executeAsyncScript(function(callback) {
       var el = document.querySelector("html");  // ng-app is defined on html element in this case
@@ -21,6 +26,7 @@ describe("Current Angular UI router state", function () {
 
     expect(currentStateName).toEqual("albums");
   });
+
 
 
 

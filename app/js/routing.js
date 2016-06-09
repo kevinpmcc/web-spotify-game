@@ -6,6 +6,8 @@ angular.module('introGame.routing', ['ui.router'])
       .otherwise('/albums');
 
     $stateProvider
+
+      
       .state('albums', {
         url: '/albums',
         templateUrl: 'views/partials/albums.html'
