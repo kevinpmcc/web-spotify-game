@@ -34,23 +34,23 @@ describe('introApp.routing', function(){
 
     describe('when empty', function () {
       beforeEach(function () {
-        mockTemplate('views/partials/albums.html');
+        mockTemplate('views/partials/splash.html');
       });
 
-      it('should go to albums', function () {
+      it('should go to index', function () {
         goTo('');
-        expect($state.current.name).toEqual('albums');
+        expect($state.current.name).toEqual('index');
       });
     });
 
     describe('/', function () {
       beforeEach(function () {
-        mockTemplate('views/partials/albums.html');
+        mockTemplate('views/partials/splash.html');
       });
 
-      it('should go to albums', function () {
+      it('should go to index', function () {
         goTo('/');
-        expect($state.current.name).toEqual('albums');
+        expect($state.current.name).toEqual('index');
       });
     });
 

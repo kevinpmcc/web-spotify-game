@@ -3,15 +3,16 @@ var mock = require('protractor-http-mock');
 
 describe("Current Angular UI router state", function () {
 
-  beforeEach(function () {
+  it("has a button which lets you start the game", function(){
     browser.get("/");
-  });
-
-  afterAll(function(){
-    mock.teardown();
+    var button = element(by.id('start-button'));
+    expect(button.isPresent()).toBeTruthy();
   });
 
   it("returns the current state", function (){
+    browser.get("/");
+    element(by.id('start-button')).click();
+
     var currentStateName = browser.executeAsyncScript(function(callback) {
       var el = document.querySelector("html");  // ng-app is defined on html element in this case
       var injector = angular.element(el).injector();
@@ -22,7 +23,14 @@ describe("Current Angular UI router state", function () {
     expect(currentStateName).toEqual("albums");
   });
 
+  beforeEach(function () {
+    browser.get('/');
+    element(by.id('start-button')).click();
+  });
 
+  afterAll(function(){
+    mock.teardown();
+  });
 
   it('displays list of albums', function(){
     var albums = element.all(by.repeater('album in controller.albums'));
