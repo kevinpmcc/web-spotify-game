@@ -1,6 +1,7 @@
 angular.module('introGame.app', [
     'introGame.routing',
     'ngAudio',
+    'introGame.indexController',
     'introGame.albumController',
     'introGame.songController',
     'introGame.answerController',
