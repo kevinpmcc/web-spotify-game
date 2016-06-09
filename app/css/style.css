@@ -1,11 +1,12 @@
 /* Empty. Add your own CSS if you like */
 #container {
-  padding-top: 50px;
+  padding-top: 10px;
   padding-right: 20%;
   /*padding-bottom: 50px;*/
   padding-left: 20%;
   text-align: center;
 }
+
 
 h1 {
   font-family:'Avenir Next', sans-serif;
@@ -29,15 +30,14 @@ ion-content {
 .list-group-item {
   padding-bottom: 10px;
 }
+
 .center {
   margin: auto;
 }
 
 .item {
-
   padding-bottom: 10px;
   margin-bottom: 10px;
-
 }
 
 input {
@@ -67,6 +67,11 @@ img {
   height: auto;
 }
 
+#splash-image {
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: #EFEDE1;
 }
@@ -75,7 +80,7 @@ body {
 .music-buttons {
   padding-bottom: 20px;
 }
-.btn-search {
+.btn {
   display: inline-block;
   margin: 0.8em;
   padding: 0.275em 0.775em;
@@ -87,4 +92,12 @@ body {
   -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+#start-button {
+  width: 30%
 }
