@@ -1,6 +1,6 @@
-# Spotify Game  
+# Second Guessing 
 
-This is a web-based version of Name That Tune. Spotify Game is its working title.  
+This is a web-based version of Name That Tune. Second Guessing is its working title.  
 
 Current incarnation can be found on https://spotify-game.herokuapp.com/ 
 
