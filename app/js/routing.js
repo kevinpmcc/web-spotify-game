@@ -1,13 +1,16 @@
 angular.module('introGame.routing', ['ui.router'])
    .config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider
-      .when('','/albums')
-      .when('/','/albums')
-      .otherwise('/albums');
+      .when('','/index')
+      .when('/','/index')
+      .otherwise('/index');
 
     $stateProvider
 
-      
+      .state('index', {
+        url: '/index',
+        templateUrl: 'views/partials/splash.html'
+      })
       .state('albums', {
         url: '/albums',
         templateUrl: 'views/partials/albums.html'
@@ -20,6 +23,5 @@ angular.module('introGame.routing', ['ui.router'])
       .state('answer', {
         url: '/answer',
         templateUrl: 'views/partials/answer.html'
-
-      })
-    })
+      });
+    });
