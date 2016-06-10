@@ -67,8 +67,8 @@ img {
   height: auto;
 }
 
-#splash-image {
-  width: 100%;
+.splash-icon {
+  width: 10em;
   height: auto;
 }
 
