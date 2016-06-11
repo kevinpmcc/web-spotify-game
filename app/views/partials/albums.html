@@ -1,22 +1,20 @@
 <div id="albums" ng-controller="AlbumController as controller">
-<div id="container">
-  <h1><b>SECOND GUESSING</b></h1>
-  <section class="search center">
-    <form ng-submit="controller.loadAlbums(searchterms)">
-      <input type="text" ng-model="searchterms" id="album-search-box"
-      placeholder="search for an album or choose one below">
-      <button id="album-search-btn" class="btn btn-search"type="submit"
-        value="album-search-term">search</button>
-    </form>
-  </section>
-  <div class="list">
-    <div id="{{ $index }}"ng-repeat="album in controller.albums" class="item item-thumbnail-left" ng-click="controller.loadSongToGuess(album)">
-      <img src="{{ album.imgUrl }}">
-      <!-- <h2> {{ album.title }} </h2> -->
+  <div class="container" id="container">
+    <h1><b>SECOND GUESSING</b></h1>
+    <section class="search center">
+      <form ng-submit="controller.loadAlbums(searchterms)">
+        <input type="text" ng-model="searchterms" id="album-search-box"
+                                                  placeholder="search for an album or choose one below">
+        <button id="album-search-btn" class="btn btn-search"type="submit"
+                                      value="album-search-term">search</button>
+      </form>
+    </section>
+          <span id="{{ $index }}"ng-repeat="album in controller.albums"
+            class="col-md-2 col-s-6 col-xs-6 album-img" ng-click="controller.loadSongToGuess(album)">
+            <img src="{{ album.imgUrl }}">
+            <!-- <h2> {{ album.title }} </h2> -->
+          </span>
+    <div id="further explanation">
 
     </div>
   </div>
-  <div id="further explanation">
-
-</div>
-</div>
