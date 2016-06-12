@@ -7,7 +7,9 @@
   text-align: center;
 }
 
-
+.second-section {
+  margin-top: 90px;
+}
 h1 {
   font-size: 5.9vw;
 }
@@ -39,9 +41,8 @@ ion-content {
   margin-bottom: 10px;
 }
 
-.album-img {
-  margin-bottom: 10px;
-}
+
+
 input {
   position: relative;
   margin: auto;
@@ -68,6 +69,8 @@ img {
   display: inline; 
   max-width: 100%;
   height: auto;
+  min-width: 175px;
+  min-height: 175px;
 }
 
 #splash-image {
@@ -112,6 +115,7 @@ body {
 .music-buttons {
   padding-bottom: 20px;
 }
+
 .btn {
   display: inline-block;
   margin: 0.8em;
