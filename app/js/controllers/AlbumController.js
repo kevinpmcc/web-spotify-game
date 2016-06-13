@@ -32,7 +32,7 @@ angular.module('introGame.albumController',['ui.router', 'introGame.playLogServi
         $state.go('song', {});
       };
 
-      self.albums = [
+      self.bob = [
       {artist: "Adele",
         title: "21",
         albumID: "7n3QJc7TBOxXtlYh4Ssll8",
