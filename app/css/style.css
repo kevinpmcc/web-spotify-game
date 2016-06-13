@@ -16,7 +16,6 @@ h1 {
 
 h1 h2 h3 h4 h5 h6 {
   font-family: 'Avenir Next', sans-serif;
-
 }
 
 h2 {
@@ -61,21 +60,22 @@ input {
   font-size: 300%;
 }
 
-
 img {
   width: 50%;
   height: auto;
 }
 
 .splash-icon {
-  width: 10em;
+  max-width: 30%;
   height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
 
 body {
   background-color: #EFEDE1;
 }
-
 
 .music-buttons {
   padding-bottom: 20px;
@@ -95,6 +95,28 @@ body {
 }
 
 .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.start-btn {
+  display: inline-block;
+  width: 40%;
+  font-size: 2.5vw;
+  margin: 0.8em;
+  padding: 0.275em 0.775em;
+  border: 2px solid #191919;
+  border-radius: 10px;
+  color: #191919;
+  line-height: 1.5;
+  /*min-width: 5.575em;*/
+  background-color: transparent;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.start-btn:hover {
   background-color: black;
   color: white;
 }
