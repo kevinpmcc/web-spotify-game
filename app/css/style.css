@@ -84,7 +84,7 @@ body {
 .music-buttons {
   padding-bottom: 20px;
 }
-.btn {
+/*.btn {
   display: inline-block;
   margin: 0.8em;
   padding: 0.275em 0.775em;
@@ -101,6 +101,10 @@ body {
 .btn:hover {
   background-color: black;
   color: white;
+}*/
+
+.btn {
+  border-radius: 10px;
 }
 
 .start-btn {
