@@ -1,17 +1,36 @@
 <div id="splash" ng-controller="IndexController as controller">
-  <div id="container">
-    <h1><b>SECOND GUESSING</b></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1><b>SECOND GUESSING</b></h1>
+      </div>
+      <div class="col s4">
+        <img class='splash-icon' id="pick-img" src="/img/pick.png" alt="Pick" />
+      </div>
+      <div class="col s4">
+        <img class='splash-icon' id="listen-img" src="/img/listen.png" alt="Listen" />
+      </div>
+      <div class="col s4">
+        <img class='splash-icon' id="guess-img" src="/img/guess.png" alt="Guess" />
+      </div>
 
-    <div id="splash-icons">
-      <img class='splash-icon' id="pick-img" src="/img/pick.png" alt="Pick" />
-      <img class='splash-icon' id="listen-img" src="/img/listen.png" alt="Listen" />
-      <img class='splash-icon' id="guess-img" src="/img/guess.png" alt="Guess" />
-    </div>
-    <div id="splash-icon-text">
-      <h2>Pick</h2>
+      <div class="col s4">
+        <p id="icon-title">Pick</p>
+        <p id="icon-text">an album</p>
+      </div>
+      <div class="col s4">
+        <p id="icon-title">Listen</p>
+      </div>
+      <div class="col s4">
+        <p id="icon-title">Guess</p>
+      </div>
+
+      <div class="col s12">
+        <button id="start-btn" class="waves-effect waves-light btn black" ng-click='controller.startGame()'>Start</button>
+      </div>
     </div>
 
-    <button class="waves-effect waves-light btn black" ng-click='controller.startGame()'>Start the Game!</button>
+
 
   </div>
 </div>

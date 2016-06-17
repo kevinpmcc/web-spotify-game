@@ -1,24 +1,16 @@
 /* Empty. Add your own CSS if you like */
-#container {
-  padding-top: 10px;
-  padding-right: 20%;
-  /*padding-bottom: 50px;*/
-  padding-left: 20%;
+.container {
   text-align: center;
 }
 
-h1 {
-  font-family:'Avenir Next', sans-serif;
-  weight: heavy;
-  font-size: 5.9vw;
+.col #icon-title {
+  font-size: 4vw;
+  /*border: 2px solid red;*/
+  margin:auto;
 }
 
-h1 h2 h3 h4 h5 h6 {
-  font-family: 'Avenir Next', sans-serif;
-}
-
-h2 {
-  font-size: 400%;
+.col #icon-text {
+  border: 2px solid red;
 }
 
 ion-content {
@@ -65,48 +57,21 @@ img {
 }
 
 .splash-icon {
-  max-width: 30%;
+  max-width: 60%;
   height: auto;
-  padding-left: 5%;
-  padding-right: 5%;
 }
-
-#splash-icon-text h2 {
-
-}
-
 
 body {
   background-color: #EFEDE1;
 }
 
-.music-buttons {
-  padding-bottom: 20px;
-}
-/*.btn {
-  display: inline-block;
-  margin: 0.8em;
-  padding: 0.275em 0.775em;
-  border: 2px solid #191919;
-  color: #191919;
-  line-height: 1.5;
-  min-width: 5.575em;
-  background-color: transparent;
-  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
-  transition: color 0.2s ease-out, background-color 0.2s ease-out;
-}
-
-.btn:hover {
-  background-color: black;
-  color: white;
-}*/
-
 .btn {
+  width: 30%;
+  height: auto;
   border-radius: 10px;
 }
 
-.start-btn {
+#start-btn {
   display: inline-block;
   width: 40%;
   font-size: 2.5vw;
@@ -114,7 +79,7 @@ body {
   padding: 0.275em 0.775em;
   border: 2px solid #191919;
   border-radius: 10px;
-  color: #191919;
+  color: grey;
   line-height: 1.5;
   /*min-width: 5.575em;*/
   background-color: transparent;
@@ -123,7 +88,7 @@ body {
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
 
-.start-btn:hover {
+#start-btn:hover {
   background-color: black;
   color: white;
 }
