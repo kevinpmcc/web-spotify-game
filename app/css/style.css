@@ -7,6 +7,7 @@
   text-align: center;
 }
 
+
 h1 {
   font-family:'Avenir Next', sans-serif;
   weight: heavy;
@@ -21,9 +22,12 @@ h2 {
   font-size: 400%;
 }
 
-ion-content {
-  text-align: center;
+.song-options:hover {
+  cursor: pointer;
+  background-color: lightgrey;
 }
+
+
 
 .list-group-item {
   padding-bottom: 10px;
@@ -47,7 +51,7 @@ input {
   font-size: 100%;
 }
 
-.button-play {
+{
   height: 100px;
   width: 100px;
   margin-right: 20px;
@@ -55,14 +59,21 @@ input {
   background-color: white;
 }
 
-.glyphicon {
-  font-size: 300%;
-}
 
 img {
   width: 50%;
   height: auto;
 }
+
+.button-play {
+  background-color: transparent;
+  border: none;
+}
+
+.material-icons#play-button{
+  font-size: 2000%;
+}
+
 
 .splash-icon {
   max-width: 30%;
@@ -84,22 +95,22 @@ body {
   padding-bottom: 20px;
 }
 /*.btn {
-  display: inline-block;
-  margin: 0.8em;
-  padding: 0.275em 0.775em;
-  border: 2px solid #191919;
-  color: #191919;
-  line-height: 1.5;
-  min-width: 5.575em;
-  background-color: transparent;
-  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
-  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+display: inline-block;
+margin: 0.8em;
+padding: 0.275em 0.775em;
+border: 2px solid #191919;
+color: #191919;
+line-height: 1.5;
+min-width: 5.575em;
+background-color: transparent;
+-webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+-moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
 
 .btn:hover {
-  background-color: black;
-  color: white;
+background-color: black;
+color: white;
 }*/
 
 .btn {

@@ -21,6 +21,8 @@ module.exports = function(config) {
       'app/lib/angular-ui-router/release/angular-ui-router.js',
       'app/js/app.js',
       'app/js/**/*.js',
+      'app/js/materialize.min.js',
+
                   'test/unit/**/*.js',
                                  'app/index.html'
 
