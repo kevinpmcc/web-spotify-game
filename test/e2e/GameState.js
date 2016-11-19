@@ -53,8 +53,6 @@ describe("Current Angular UI router state", function () {
     element(by.id('0')).click();
     var tracks = element.all(by.repeater('song in controller.remainingSongs()'));
     expect(tracks.count()).toEqual(10);
-    expect(tracks.get(1).element(by.tagName('p')).getText()).toEqual("Holiday");
-    expect(tracks.get(2).element(by.tagName('p')).getText()).toEqual("In The Garage");
   });
 
   it('transitions to answer page when song name clicked', function(){
