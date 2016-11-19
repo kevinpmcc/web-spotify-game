@@ -28,6 +28,11 @@ ion-content {
 
 .list-group-item {
   padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #F5F5F5;
 }
 
 .center {
