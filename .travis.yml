@@ -1,0 +1,17 @@
+language: node_js
+node_js: '4.5'
+
+before_script:
+  - npm install -g bower
+  - bower install
+
+script: node_modules/karma/bin/karma start test/karma.conf.js --single-run
+
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+deploy:
+  api_key:
+    secure: amZpSA7n3XJy4Oiu1Qqvced6zg472PI0hLwArTwwloO2mxVYwY8YSku5rbAPQzSYWuXNjQO9HuYwQ1GDTXkISuvTNmkkfuONUJSSGQZAA8n03U2nt/ckChFpnC69eZXbit+2z6naC/tsZZ8o1ZvrI1/wZgGN+lNqrDmurd+hwHD1BMgw2knEe1xN7poPiCBAA5DjmCu/XSPKFR00TEt/J6kSjjZcQWUDcDfVQPSwOu4zzJHPdrNrSCjXwQ+KqC/dQ+d0GxbfjicUU4lQm2vzNzoKvxu0mglQq65kAIIX+hdDUXH497h2+IwWTj2f3wJhJEMDEZbOA2oCuJ9GlHa4B619kBQ1EkYsrYKHEGyqYsNw2rX0wZfJ8+uANPsej4Zzco/YHOvKJ8k6BOZSMiVdZM7pkzbE/SyqKaq4ltIdhXDfuzIbryF1Q0OVZadquVJZD14bXqSAEj7wN4Qtu1Q48ZpeuvJJtj3VCRgVwzFCLgz1vAURXj1CedcK08d0ojw/NGlZWMA0DZpIbSgkFdYCcG/UWoROSFNuce75WJjCF7ryNEO1n5G4c+vVsY/RzrDhQBweeO+vJzgkngcPgzJIPXbdOyODOTl6JuYY0oZFS4Yj4QChnsL8HTMBBaeqAVVWRbUVP9ZOXJu9mGF6uQaE2t4OiY5fAU9aV6wtD7Hibr0=
